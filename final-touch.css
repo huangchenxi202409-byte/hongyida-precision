@@ -1,0 +1,14 @@
+/* Final interaction and network-map refinements */
+.contact-choice:hover,.contact-choice:focus-visible{background:rgba(173,211,244,.16)!important;color:#fff!important}
+.contact-choice:hover span,.contact-choice:hover b,.contact-choice:hover small,.contact-choice:focus-visible span,.contact-choice:focus-visible b,.contact-choice:focus-visible small{color:#fff!important;opacity:1}
+.contact-choice:focus-visible{outline:1px solid rgba(226,242,255,.76);outline-offset:-5px}
+.contact-choice{position:relative}.contact-choice .contact-icon{position:absolute;right:20px;top:24px;width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;color:#dceeff;opacity:.9}.contact-choice:hover .contact-icon{color:#fff}
+.network-layout .world-map{inset:2% 1%!important;width:98%!important;height:96%!important;fill:rgba(205,224,238,.3)!important;stroke:rgba(224,240,252,.9)!important;stroke-width:1.8!important}
+.network-layout .network-stage{overflow:visible!important}
+.network-layout .map-label{font-size:12px;padding:5px 9px;background:rgba(4,19,34,.94);border-color:rgba(148,207,253,.72);box-shadow:0 5px 16px rgba(0,0,0,.24)}
+.network-layout .map-label:before{background:none;border-top:1px dashed rgba(111,188,244,.92);height:0;width:42px}
+.network-layout .mexico-label{left:-2%;top:62%}.network-layout .mexico-label:before{left:100%;top:52%;width:54px}
+.network-layout .france-label{left:37%;top:12%}.network-layout .france-label:before{left:50%;top:100%;width:1px;height:60px;border:0;border-left:1px dashed rgba(111,188,244,.92)}
+.network-layout .kunshan-label{right:-2%;top:31%}.network-layout .kunshan-label:before{right:100%;top:52%;width:58px}
+.network-layout .wuhu-label{right:-2%;top:66%}.network-layout .wuhu-label:before{right:100%;top:52%;width:64px}
+@media(max-width:900px){.network-layout .network-stage{overflow:hidden!important}.network-layout .map-label{font-size:10px;padding:4px 6px}.network-layout .mexico-label{left:2%}.network-layout .kunshan-label,.network-layout .wuhu-label{right:2%}}

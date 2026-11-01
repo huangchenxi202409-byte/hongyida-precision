@@ -1,0 +1,22 @@
+/* Full world silhouette, replacing the fragmented earlier map treatment. */
+.footprint:before{background:none!important;opacity:0!important}
+.footprint:after{background:linear-gradient(90deg,#030609 0%,rgba(3,6,9,.84) 50%,#030609 100%)!important}
+.network-layout{grid-template-columns:.82fr 2.05fr .82fr!important;min-height:590px!important;gap:16px!important;margin:58px auto 0!important;width:94%!important}.network-layout .network-stage{overflow:visible!important;background:radial-gradient(ellipse at 51% 48%,rgba(40,106,166,.14),transparent 64%),linear-gradient(135deg,#071d30,#06111d)!important}
+.network-layout .world-map{display:none!important}
+.network-layout .network-stage:before{z-index:2!important}.network-layout .network-stage:after{content:''!important;display:block!important;position:absolute!important;inset:4px!important;z-index:1!important;background:url('assets/world-map-reference-enhanced.png') center/100% 100% no-repeat!important;filter:saturate(.72) brightness(.84) contrast(1.18)!important;opacity:.96!important;pointer-events:none!important}
+.network-layout .map-node{width:12px!important;height:12px!important;background:#fff!important;box-shadow:0 0 0 6px rgba(12,110,207,.28),0 0 22px #1282eb!important}
+.network-layout .mexico{left:17.5%!important;top:55%!important}.network-layout .france{left:46%!important;top:34%!important}.network-layout .kunshan{right:18%!important;top:42%!important}.network-layout .wuhu{right:18.8%!important;top:43.5%!important}
+.network-layout .map-label{font:600 11px var(--sans)!important;letter-spacing:.03em!important;color:#fff!important;border:1px solid rgba(149,208,250,.74)!important;background:rgba(5,24,42,.94)!important;box-shadow:none!important}
+.network-layout .map-label:before{display:block!important;background:transparent!important;border-top:1px dashed #66bafb!important;height:0!important}
+.network-layout .mexico-label{left:2%!important;top:63%!important}.network-layout .mexico-label:before{left:100%!important;top:50%!important;width:74px!important}
+.network-layout .france-label{left:40%!important;top:13%!important}.network-layout .france-label:before{left:50%!important;top:100%!important;width:0!important;height:62px!important;border:0!important;border-left:1px dashed #66bafb!important}
+.network-layout .kunshan-label{right:2%!important;top:28%!important}.network-layout .kunshan-label:before{right:100%!important;top:50%!important;width:82px!important}
+.network-layout .wuhu-label{right:2%!important;top:66%!important}.network-layout .wuhu-label:before{right:100%!important;top:50%!important;width:88px!important}
+.network-layout .map-label{display:none!important}.network-connectors{display:block!important;z-index:7!important}.network-connectors path{stroke:rgba(110,189,247,.58)!important;stroke-width:1.1!important;stroke-dasharray:5 6!important}.network-connectors circle{display:none!important}
+/* Keep pin-to-card routes clean; the connector SVG makes the required elbow turns. */
+.network-layout .map-node{overflow:visible!important;z-index:8!important}.network-layout .map-node:after{display:none!important}
+.pdf-link small{font-size:12px!important;line-height:1.55!important;white-space:nowrap!important}
+@media(max-width:900px){.network-layout{width:100%!important;min-height:0!important}.network-layout .network-stage{overflow:hidden!important}.network-connectors{display:none!important}.network-layout .map-node:after{display:none!important}}
+@media(max-width:620px){.network-layout .network-stage:after{inset:10% -10%}.network-layout .map-label{font-size:9px!important;padding:3px 5px!important}.network-layout .mexico-label{left:1%!important}.network-layout .kunshan-label,.network-layout .wuhu-label{right:1%!important}}
+
+/* Inline asset keeps the continent silhouette inside the canvas even in a plain local preview. */
